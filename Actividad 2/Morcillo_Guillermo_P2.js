@@ -18,7 +18,7 @@ switch(meses){
     case "junio":
     case "julio":
     case "agosto":
-        document.write(mensaje + "Primavera");
+        document.write(mensaje + "Verano");
         break;
 
     case "septiembre":

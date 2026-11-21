@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios Examen</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header class="topbar">
+        <button class="menu-toggle" id="menuToggle" type="button" aria-controls="sidebar" aria-expanded="true" aria-label="Ocultar menú">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <h1>Ejercicios Examen</h1>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar a modo oscuro" title="Cambiar tema">
+            <span id="themeIcon" aria-hidden="true">☾</span>
+        </button>
+    </header>
+
+    <aside class="sidebar" id="sidebar">
+        <nav aria-label="Secciones del examen">
+            <button class="section-link active" type="button" data-section="1">
+                <span>Sección 1</span>
+                <small>Programación Básica</small>
+            </button>
+            <button class="section-link" type="button" data-section="2">
+                <span>Sección 2</span>
+                <small>Programación Avanzada</small>
+            </button>
+            <button class="section-link" type="button" data-section="3">
+                <span>Sección 3</span>
+                <small>Anexo Programación Avanzada</small>
+            </button>
+            <button class="section-link" type="button" data-section="4">
+                <span>Sección 4</span>
+                <small>DOM</small>
+            </button>
+            <button class="section-link" type="button" data-section="5">
+                <span>Sección 5</span>
+                <small>Anexo DOM</small>
+            </button>
+            <button class="section-link" type="button" data-section="6">
+                <span>Sección 6</span>
+                <small>Eventos</small>
+            </button>
+            <button class="section-link" type="button" data-section="7">
+                <span>Sección 7</span>
+                <small>Anexo Eventos</small>
+            </button>
+            <button class="section-link" type="button" data-section="8">
+                <span>Sección 8</span>
+                <small>Formularios</small>
+            </button>
+        </nav>
+    </aside>
+
+    <main class="main-content" id="mainContent">
+        <section id="section1" class="section-content">
+            <h2>Sección 1 - Programación Básica</h2>
+
+            <article class="panel html-panel">
+                <div class="panel-heading">
+                    <div>
+                        <span class="panel-label">Actividad 1</span>
+                        <h3>HTML utilizado para esta sección</h3>
+                    </div>
+                    <a class="source-link" href="./Actividad 1/pagina.html" target="_blank" rel="noopener">Abrir pagina.html</a>
+                </div>
+                <pre><code id="htmlSource">Cargando pagina.html...</code></pre>
+            </article>
+
+            <div class="exercise-list" id="exerciseList">
+                <article class="panel exercise" data-js="./Actividad 1/Morcillo_Guillermo_P1.js">
+                    <div class="panel-heading">
+                        <div>
+                            <span class="exercise-number">Ejercicio 1</span>
+                            <h3>Suma de 5 números y mayores de 100</h3>
+                        </div>
+                        <button class="run-button" type="button">Ejecutar</button>
+                    </div>
+                    <p class="exercise-description">Introducir 5 números. Calcular la suma de todos ellos y decir cuántos son mayores de 100.</p>
+                    <pre><code>Cargando código JavaScript...</code></pre>
+                </article>
+
+                <article class="panel exercise" data-js="./Actividad 1/Morcillo_Guillermo_P2.js">
+                    <div class="panel-heading">
+                        <div>
+                            <span class="exercise-number">Ejercicio 2</span>
+                            <h3>Suma de los números mayores de 8</h3>
+                        </div>
+                        <button class="run-button" type="button">Ejecutar</button>
+                    </div>
+                    <p class="exercise-description">Almacenar en un array los números 7, 8, 2, 9 y 10. Calcular la suma de los números mayores de 8.</p>
+                    <pre><code>Cargando código JavaScript...</code></pre>
+                </article>
+
+                <article class="panel exercise" data-js="./Actividad 1/Morcillo_Guillermo_P3.js">
+                    <div class="panel-heading">
+                        <div>
+                            <span class="exercise-number">Ejercicio 3</span>
+                            <h3>Estación correspondiente al mes</h3>
+                        </div>
+                        <button class="run-button" type="button">Ejecutar</button>
+                    </div>
+                    <p class="exercise-description">Introducir un mes y decir a qué estación pertenece.</p>
+                    <p class="exercise-example">Ejemplo: Dime un mes: enero → Estamos en invierno.</p>
+                    <p class="exercise-description">Diciembre, enero y febrero son invierno; marzo, abril y mayo, primavera; junio, julio y agosto, verano; septiembre, octubre y noviembre, otoño.</p>
+                    <pre><code>Cargando código JavaScript...</code></pre>
+                </article>
+
+                <article class="panel exercise" data-js="./Actividad 1/Morcillo_Guillermo_P4.js">
+                    <div class="panel-heading">
+                        <div>
+                            <span class="exercise-number">Ejercicio 4</span>
+                            <h3>Número par o impar</h3>
+                        </div>
+                        <button class="run-button" type="button">Ejecutar</button>
+                    </div>
+                    <p class="exercise-description">Introducir un número y decir si es par o impar.</p>
+                    <pre><code>Cargando código JavaScript...</code></pre>
+                </article>
+
+                <article class="panel exercise" data-js="./Actividad 1/Morcillo_Guillermo_P5.js">
+                    <div class="panel-heading">
+                        <div>
+                            <span class="exercise-number">Ejercicio 5</span>
+                            <h3>Precio, IVA y precio total</h3>
+                        </div>
+                        <button class="run-button" type="button">Ejecutar</button>
+                    </div>
+                    <p class="exercise-description">Introducir el precio de un artículo. Calcular el IVA y el precio total con el IVA incluido. El resultado debe redondearse a dos decimales.</p>
+                    <pre><code>Cargando código JavaScript...</code></pre>
+                </article>
+
+                <article class="panel exercise" data-js="./Actividad 1/Morcillo_Guillermo_P6.js">
+                    <div class="panel-heading">
+                        <div>
+                            <span class="exercise-number">Ejercicio 6</span>
+                            <h3>Longitud y formato de una cadena</h3>
+                        </div>
+                        <button class="run-button" type="button">Ejecutar</button>
+                    </div>
+                    <p class="exercise-description">Introducir una cadena y decir su longitud. Pasarla a mayúsculas y a minúsculas. Mostrar cada palabra por separado primero en el orden normal y después al revés.</p>
+                    <p class="exercise-example">
+                        Ejemplo: Introduce una cadena: La casa de Maria<br>
+                        La longitud de la cadena es 16 caracteres<br>
+                        La cadena en mayúsculas es LA CASA DE MARIA<br>
+                        La cadena en minúsculas es la casa de maria<br><br>
+                        CADENA NORMAL<br>
+                        La<br>
+                        casa<br>
+                        de<br>
+                        Maria<br><br>
+                        CADENA AL REVÉS<br>
+                        Maria<br>
+                        de<br>
+                        casa<br>
+                        La
+                    </p>
+                    <pre><code>Cargando código JavaScript...</code></pre>
+                </article>
+            </div>
+        </section>
+
+        <section id="section2" class="section-content" hidden>
+            <h2>Sección 2 - Programación Avanzada</h2>
+
+            <article class="panel html-panel">
+                <div class="panel-heading">
+                    <div>
+                        <span class="panel-label">Actividad 2</span>
+                        <h3>HTML utilizado para esta sección</h3>
+                    </div>
+                    <a class="source-link" href="./Actividad 2/pagina.html" target="_blank" rel="noopener">Abrir pagina.html</a>
+                </div>
+                <pre><code id="htmlSource2">Cargando pagina.html...</code></pre>
+            </article>
+
+            <div class="exercise-list">
+                <article class="panel exercise" data-source="./Actividad 2/Morcillo_Guillermo_P1.js" data-type="js">
+                    <div class="panel-heading">
+                        <div>
+                            <span class="exercise-number">Ejercicio 1</span>
+                            <h3>Precio, IVA y precio total con función</h3>
+                        </div>
+                        <button class="run-button" type="button">Ejecutar</button>
+                    </div>
+                    <p class="exercise-description">Introducir el precio de un artículo. Calcular el IVA y el precio total con el IVA incluido, redondeado a dos decimales. Debe utilizarse una función.</p>
+                    <pre><code>Cargando código JavaScript...</code></pre>
+                </article>
+
+                <article class="panel exercise" data-source="./Actividad 2/Morcillo_Guillermo_P2.js" data-type="js">
+                    <div class="panel-heading">
+                        <div>
+                            <span class="exercise-number">Ejercicio 2</span>
+                            <h3>Estación del año con switch</h3>
+                        </div>
+                        <button class="run-button" type="button">Ejecutar</button>
+                    </div>
+                    <p class="exercise-description">Introducir un mes y decir a qué estación pertenece, utilizando la estructura switch.</p>
+                    <p class="exercise-example">Ejemplo: Dime un mes: enero → Estamos en invierno.</p>
+                    <p class="exercise-description">Diciembre, enero y febrero son invierno; marzo, abril y mayo, primavera; junio, julio y agosto, verano; septiembre, octubre y noviembre, otoño.</p>
+                    <pre><code>Cargando código JavaScript...</code></pre>
+                </article>
+
+                <article class="panel exercise" data-source="./Actividad 2/Morcillo_Guillermo_P3.html" data-type="html">
+                    <div class="panel-heading">
+                        <div>
+                            <span class="exercise-number">Ejercicio 3</span>
+                            <h3>Bienvenida, navegador y confirmación</h3>
+                        </div>
+                        <button class="run-button" type="button">Ejecutar</button>
+                    </div>
+                    <p class="exercise-description">Crear una página que muestre “Bienvenido a mi página” con formato H1, indique la plataforma del navegador y, mediante una ventana de confirmación, pregunte si se desea continuar. Si se confirma, debe mostrarse “Continuamos...”</p>
+                    <pre><code>Cargando código HTML...</code></pre>
+                </article>
+
+                <article class="panel exercise" data-source="./Actividad 2/Morcillo_Guillermo_P5.html" data-type="html">
+                    <div class="panel-heading">
+                        <div>
+                            <span class="exercise-number">Ejercicio 5</span>
+                            <h3>Fecha actual con día y mes en letra</h3>
+                        </div>
+                        <button class="run-button" type="button">Ejecutar</button>
+                    </div>
+                    <p class="exercise-description">Crear una página con el botón “Fecha Actual”. Al pulsarlo debe mostrarse la fecha del sistema con el día y el mes escritos en letras.</p>
+                    <p class="exercise-example">Ejemplo: Lunes, 15 de Octubre de 2012</p>
+                    <pre><code>Cargando código HTML...</code></pre>
+                </article>
+
+                <article class="panel exercise" data-source="./Actividad 2/Morcillo_Guillermo_P6.html" data-type="html">
+                    <div class="panel-heading">
+                        <div>
+                            <span class="exercise-number">Ejercicio 6</span>
+                            <h3>Hora actual y saludo</h3>
+                        </div>
+                        <button class="run-button" type="button">Ejecutar</button>
+                    </div>
+                    <p class="exercise-description">Crear una página con el botón “Hora Actual”. Al pulsarlo debe mostrarse un saludo según la hora: Buenos días hasta las 14:00, Buenas tardes hasta las 20:00 y Buenas noches a partir de esa hora.</p>
+                    <p class="exercise-example">Ejemplo: Buenos días, son las 12:30 horas</p>
+                    <pre><code>Cargando código HTML...</code></pre>
+                </article>
+
+                <article class="panel exercise" data-source="./Actividad 2/Morcillo_Guillermo_P7.html" data-type="html">
+                    <div class="panel-heading">
+                        <div>
+                            <span class="exercise-number">Ejercicio 7</span>
+                            <h3>Cambiar el color de fondo</h3>
+                        </div>
+                        <button class="run-button" type="button">Ejecutar</button>
+                    </div>
+                    <p class="exercise-description">Crear una página con tres botones titulados Azul, Verde y Rojo. Al pulsar cada uno debe cambiar el fondo de la página al color indicado, utilizando el evento onclick.</p>
+                    <pre><code>Cargando código HTML...</code></pre>
+                </article>
+
+                <article class="panel exercise" data-source="./Actividad 2/Morcillo_Guillermo_P8.html" data-type="html">
+                    <div class="panel-heading">
+                        <div>
+                            <span class="exercise-number">Ejercicio 8</span>
+                            <h3>Información sobre el documento actual</h3>
+                        </div>
+                        <button class="run-button" type="button">Ejecutar</button>
+                    </div>
+                    <p class="exercise-description">Mostrar la URL del documento actual, su pathname y el protocolo utilizado. Añadir un botón que cargue la página de Google al pulsarlo.</p>
+                    <pre><code>Cargando código HTML...</code></pre>
+                </article>
+
+                <article class="panel exercise" data-source="./Actividad 2/Morcillo_Guillermo_P9.html" data-type="html">
+                    <div class="panel-heading">
+                        <div>
+                            <span class="exercise-number">Ejercicio 9</span>
+                            <h3>Abrir y cerrar una ventana nueva</h3>
+                        </div>
+                        <button class="run-button" type="button">Ejecutar</button>
+                    </div>
+                    <p class="exercise-description">Crear una página con el botón “Abrir”. Al pulsarlo debe aparecer otra ventana que contenga el botón “Cerrar”. Al pulsarlo debe cerrarse y volver a la página inicial.</p>
+                    <pre><code>Cargando código HTML...</code></pre>
+                </article>
+            </div>
+        </section>
+
+        <section id="section3" class="section-content" hidden>
+            <h2>Sección 3 - Anexo Programación Avanzada</h2>
+
+            <article class="panel html-panel">
+                <div class="panel-heading">
+                    <div>
+                        <span class="panel-label">Actividad 3</span>
+                        <h3>HTML utilizado para esta sección</h3>
+                    </div>
+                </div>
+                <p class="exercise-description">Esta sección utiliza archivos HTML independientes. En estos ejercicios, el código JavaScript está integrado dentro de cada página HTML.</p>
+            </article>
+
+            <div class="exercise-list">
+                <article class="panel exercise" data-source="./Actividad 3/Morcillo_Guillermo_A1.html" data-type="html">
+                    <div class="panel-heading">
+                        <div>
+                            <span class="exercise-number">Ejercicio 1</span>
+                            <h3>Alerta al pasar sobre un hipervínculo</h3>
+                        </div>
+                        <button class="run-button" type="button">Ejecutar</button>
+                    </div>
+                    <p class="exercise-description">Crear una página web que contenga un hipervínculo. Cada vez que el ratón pase por encima del enlace debe mostrarse un alert indicando que se está encima de un hipervínculo.</p>
+                    <pre><code>Cargando código HTML...</code></pre>
+                </article>
+
+                <article class="panel exercise" data-source="./Actividad 3/Morcillo_Guillermo_A2.html" data-type="html">
+                    <div class="panel-heading">
+                        <div>
+                            <span class="exercise-number">Ejercicio 2</span>
+                            <h3>Validar un campo DNI vacío</h3>
+                        </div>
+                        <button class="run-button" type="button">Ejecutar</button>
+                    </div>
+                    <p class="exercise-description">Crear un formulario básico con el campo DNI y el botón Enviar. Si el usuario deja el campo DNI vacío, debe mostrarse un alert al pulsar Enviar indicando que el campo no tiene datos.</p>
+                    <pre><code>Cargando código HTML...</code></pre>
+                </article>
+
+                <article class="panel exercise" data-source="./Actividad 3/Morcillo_Guillermo_A3.html" data-type="html">
+                    <div class="panel-heading">
+                        <div>
+                            <span class="exercise-number">Ejercicio 3</span>
+                            <h3>Sumar diez y reiniciar</h3>
+                        </div>
+                        <button class="run-button" type="button">Ejecutar</button>
+                    </div>
+                    <p class="exercise-description">Crear una caja de texto con el valor inicial 0 y dos botones: Sumar e Inicializar. Al pulsar Sumar, el valor se incrementará de 10 en 10. Al pulsar Inicializar, el valor volverá a ser 0.</p>
+                    <pre><code>Cargando código HTML...</code></pre>
+                </article>
+
+                <article class="panel exercise" data-source="./Actividad 3/Morcillo_Guillermo_A4.html" data-type="html">
+                    <div class="panel-heading">
+                        <div>
+                            <span class="exercise-number">Ejercicio 4</span>
+                            <h3>Acertar un número aleatorio</h3>
+                        </div>
+                        <button class="run-button" type="button">Ejecutar</button>
+                    </div>
+                    <p class="exercise-description">Introducir un número del 1 al 10. El programa generará otro número aleatoriamente. Si ambos coinciden debe mostrarse un mensaje de felicitación; en caso contrario debe indicarse que se ha fallado.</p>
+                    <pre><code>Cargando código HTML...</code></pre>
+                </article>
+
+                <article class="panel exercise" data-source="./Actividad 3/Morcillo_Guillermo_A5.html" data-type="html">
+                    <div class="panel-heading">
+                        <div>
+                            <span class="exercise-number">Ejercicio 5</span>
+                            <h3>Mensaje inicial y apertura posterior</h3>
+                        </div>
+                        <button class="run-button" type="button">Ejecutar</button>
+                    </div>
+                    <p class="exercise-description">Crear un documento que muestre un mensaje de bienvenida al cargarse. Pasados 20 segundos debe abrirse otro documento nuevo.</p>
+                    <pre><code>Cargando código HTML...</code></pre>
+                </article>
+
+                <article class="panel exercise" data-source="./Actividad 3/Morcillo_Guillermo_A6.html" data-type="html">
+                    <div class="panel-heading">
+                        <div>
+                            <span class="exercise-number">Ejercicio 6</span>
+                            <h3>Ejecutar una suma con eval</h3>
+                        </div>
+                        <button class="run-button" type="button">Ejecutar</button>
+                    </div>
+                    <p class="exercise-description">Partiendo de la cadena de texto cadena = "2+2", utilizar la función eval para ejecutar la cadena y mostrar el resultado de la suma.</p>
+                    <pre><code>Cargando código HTML...</code></pre>
+                </article>
+            </div>
+        </section>
+
+        <section id="section4" class="section-content" hidden>
+            <h2>Sección 4 - DOM</h2>
+
+            <article class="panel html-panel">
+                <div class="panel-heading">
+                    <div>
+                        <span class="panel-label">Actividad 4</span>
+                        <h3>HTML utilizado para esta sección</h3>
+                    </div>
+                </div>
+                <p class="exercise-description">Esta sección utiliza archivos HTML independientes. El código JavaScript está integrado dentro de cada página HTML para crear, insertar, reemplazar, borrar y clonar elementos del DOM.</p>
+            </article>
+
+            <div class="exercise-list">
+                <article class="panel exercise" data-source="./Actividad 4/Morcillo_Guillermo_P1.html" data-type="html">
+                    <div class="panel-heading">
+                        <div>
+                            <span class="exercise-number">Ejercicio 1</span>
+                            <h3>Crear y modificar párrafos dentro de un div</h3>
+                        </div>
+                        <button class="run-button" type="button">Ejecutar</button>
+                    </div>
+                    <p class="exercise-description">Crear una página con un párrafo inicial “Este es mi primer párrafo” y cinco botones:</p>
+                    <p class="exercise-description">Añadir párrafo añadirá “Párrafo añadido” detrás del último párrafo. Insertar párrafo añadirá “Párrafo insertado” detrás del primer párrafo. Reemplazar párrafo cambiará el segundo párrafo por “Párrafo reemplazado”. Borrar párrafo eliminará el párrafo situado detrás del primero. Clonar div duplicará toda la estructura div actual.</p>
+                    <pre><code>Cargando código HTML...</code></pre>
+                </article>
+
+                <article class="panel exercise" data-source="./Actividad 4/Morcillo_Guillermo_P2.html" data-type="html">
+                    <div class="panel-heading">
+                        <div>
+                            <span class="exercise-number">Ejercicio 2</span>
+                            <h3>Modificar una lista desordenada de animales</h3>
+                        </div>
+                        <button class="run-button" type="button">Ejecutar</button>
+                    </div>
+                    <p class="exercise-description">Crear una lista desordenada con tres animales. Los botones deben añadir, insertar, reemplazar, borrar y clonar elementos de la lista.</p>
+                    <p class="exercise-description">El botón “Crear sublista dentro de león con funciones DOM” debe crear una sublista dentro del primer elemento mediante funciones DOM. El botón “Crear sublista dentro de león con InnerHTML” debe hacer lo mismo utilizando la propiedad innerHTML.</p>
+                    <pre><code>Cargando código HTML...</code></pre>
+                </article>
+
+                <article class="panel exercise" data-source="./Actividad 4/Morcillo_Guillermo_P3.html" data-type="html">
+                    <div class="panel-heading">
+                        <div>
+                            <span class="exercise-number">Ejercicio 3</span>
+                            <h3>Cambiar el fondo de un div</h3>
+                        </div>
+                        <button class="run-button" type="button">Ejecutar</button>
+                    </div>
+                    <p class="exercise-description">Crear un div con el texto “Bienvenido a esta página de prueba de colores”, inicialmente con fondo blanco. Los botones Azul y Verde deben cambiar su fondo a esos colores. El botón Restaurar color inicial debe dejarlo blanco.</p>
+                    <pre><code>Cargando código HTML...</code></pre>
+                </article>
+
+                <article class="panel exercise" data-source="./Actividad 4/Morcillo_Guillermo_P4.html" data-type="html">
+                    <div class="panel-heading">
+                        <div>
+                            <span class="exercise-number">Ejercicio 4</span>
+                            <h3>Contar imágenes y enlaces</h3>
+                        </div>
+                        <button class="run-button" type="button">Ejecutar</button>
+                    </div>
+                    <p class="exercise-description">Crear una página con varias imágenes y enlaces. El botón “Número de imágenes” debe mostrar mediante alert el número total de imágenes. El botón “Número de enlaces” debe mostrar mediante alert el número total de enlaces.</p>
+                    <pre><code>Cargando código HTML...</code></pre>
+                </article>
+
+                <article class="panel exercise" data-source="./Actividad 4/Morcillo_Guillermo_P5.html" data-type="html">
+                    <div class="panel-heading">
+                        <div>
+                            <span class="exercise-number">Ejercicio 5</span>
+                            <h3>Crear un elemento con atributos</h3>
+                        </div>
+                        <button class="run-button" type="button">Ejecutar</button>
+                    </div>
+                    <p class="exercise-description">Crear un elemento mediante JavaScript, por ejemplo una caja de texto, y asignarle atributos como tipo, identificador y marcador de texto. También puede configurarse su apariencia mediante CSS.</p>
+                    <pre><code>Cargando código HTML...</code></pre>
+                </article>
+            </div>
+        </section>
+
+        <section id="section5" class="section-content" hidden>
+            <h2>Sección 5 - Anexo DOM</h2>
+
+            <article class="panel html-panel">
+                <div class="panel-heading">
+                    <div>
+                        <span class="panel-label">Actividad 5</span>
+                        <h3>HTML utilizado para esta sección</h3>
+                    </div>
+                </div>
+                <p class="exercise-description">Esta sección utiliza funciones DOM para acceder a párrafos y enlaces. El código JavaScript está integrado dentro de cada archivo HTML.</p>
+            </article>
+
+            <div class="exercise-list">
+                <article class="panel exercise" data-source="./Actividad 5/Morcillo_Guillermo_A1.html" data-type="html">
+                    <div class="panel-heading">
+                        <div>
+                            <span class="exercise-number">Ejercicio 1</span>
+                            <h3>Contar y mostrar enlaces de párrafos</h3>
+                        </div>
+                        <button class="run-button" type="button">Ejecutar</button>
+                    </div>
+                    <p class="exercise-description">Crear un documento con tres párrafos que contengan uno, dos y tres enlaces respectivamente. Utilizar funciones DOM para contar los enlaces, mostrar sus referencias y mostrar las referencias agrupadas por párrafo.</p>
+                    <p class="exercise-description">Botones: “Número de enlaces”, “Referencia de enlaces” y “Referencia de enlaces por párrafo”. Los datos pueden mostrarse con alert o con innerHTML.</p>
+                    <pre><code>Cargando código HTML...</code></pre>
+                </article>
+
+                <article class="panel exercise" data-source="./Actividad 5/Morcillo_Guillermo_A2.html" data-type="html">
+                    <div class="panel-heading">
+                        <div>
+                            <span class="exercise-number">Ejercicio 2</span>
+                            <h3>Contar enlaces y cambiar el color de los párrafos</h3>
+                        </div>
+                        <button class="run-button" type="button">Ejecutar</button>
+                    </div>
+                    <p class="exercise-description">Modificar el ejercicio anterior añadiendo dos botones nuevos:</p>
+                    <p class="exercise-description">“Párrafos verdes” cambiará a verde el color de todos los párrafos. “Desactivar color” volverá a colocar el color inicial de todos los párrafos. Deben utilizarse funciones DOM para acceder a los nodos y modificar sus atributos.</p>
+                    <pre><code>Cargando código HTML...</code></pre>
+                </article>
+            </div>
+        </section>
+
+        <section id="section6" class="section-content" hidden>
+            <h2>Sección 6 - Eventos</h2>
+
+            <article class="panel html-panel">
+                <div class="panel-heading">
+                    <div>
+                        <span class="panel-label">Actividad 6</span>
+                        <h3>HTML utilizado para esta sección</h3>
+                    </div>
+                </div>
+                <p class="exercise-description">Esta sección utiliza archivos HTML independientes. Los ejercicios muestran distintas formas de asociar eventos a elementos y funciones.</p>
+            </article>
+
+            <div class="exercise-list">
+                <article class="panel exercise" data-source="./Actividad 6/Morcillo_Guillermo_A1.html" data-type="html">
+                    <div class="panel-heading">
+                        <div>
+                            <span class="exercise-number">Ejercicio 1</span>
+                            <h3>Cambiar el tamaño con funciones externas y this</h3>
+                        </div>
+                        <button class="run-button" type="button">Ejecutar</button>
+                    </div>
+                    <p class="exercise-description">Poner en un div el texto “Al pasar por encima de este texto cambiará de tamaño”. Inicialmente tendrá 12 pt; al pasar el ratón por encima cambiará a 16 pt y al salir volverá a 12 pt. Utilizar funciones externas y this.</p>
+                    <pre><code>Cargando código HTML...</code></pre>
+                </article>
+
+                <article class="panel exercise" data-source="./Actividad 6/Morcillo_Guillermo_A2.html" data-type="html">
+                    <div class="panel-heading">
+                        <div>
+                            <span class="exercise-number">Ejercicio 2</span>
+                            <h3>Cambiar el tamaño con estructura semántica</h3>
+                        </div>
+                        <button class="run-button" type="button">Ejecutar</button>
+                    </div>
+                    <p class="exercise-description">Realizar el ejercicio anterior utilizando la estructura semántica para construir y llamar al evento desde JavaScript.</p>
+                    <pre><code>Cargando código HTML...</code></pre>
+                </article>
+
+                <article class="panel exercise" data-source="./Actividad 6/Morcillo_Guillermo_A3.html" data-type="html">
+                    <div class="panel-heading">
+                        <div>
+                            <span class="exercise-number">Ejercicio 3</span>
+                            <h3>Cambiar el tamaño mediante el objeto event</h3>
+                        </div>
+                        <button class="run-button" type="button">Ejecutar</button>
+                    </div>
+                    <p class="exercise-description">Realizar el mismo ejercicio utilizando el objeto event. En función del tipo de evento, aumentar o disminuir el tamaño de la letra.</p>
+                    <pre><code>Cargando código HTML...</code></pre>
+                </article>
+
+                <article class="panel exercise" data-source="./Actividad 6/Morcillo_Guillermo_A4.html" data-type="html">
+                    <div class="panel-heading">
+                        <div>
+                            <span class="exercise-number">Ejercicio 4</span>
+                            <h3>Compatibilidad con addEventListener y attachEvent</h3>
+                        </div>
+                        <button class="run-button" type="button">Ejecutar</button>
+                    </div>
+                    <p class="exercise-description">Realizar el ejercicio con attachEvent y addEventListener. Utilizar un método o función que permita compatibilidad con Internet Explorer y con el resto de navegadores.</p>
+                    <pre><code>Cargando código HTML...</code></pre>
+                </article>
+
+                <article class="panel exercise" data-source="./Actividad 6/Morcillo_Guillermo_A5.html" data-type="html">
+                    <div class="panel-heading">
+                        <div>
+                            <span class="exercise-number">Ejercicio 5</span>
+                            <h3>Campo de texto que sólo admite números</h3>
+                        </div>
+                        <button class="run-button" type="button">Ejecutar</button>
+                    </div>
+                    <p class="exercise-description">Crear un formulario con un campo de texto que sólo permita introducir números. Utilizar el evento onkeypress y las propiedades keyCode y charCode para controlar los valores correctos.</p>
+                    <pre><code>Cargando código HTML...</code></pre>
+                </article>
+
+                <article class="panel exercise" data-source="./Actividad 6/Morcillo_Guillermo_A6.html" data-type="html">
+                    <div class="panel-heading">
+                        <div>
+                            <span class="exercise-number">Ejercicio 6</span>
+                            <h3>Detectar cualquier botón pulsado</h3>
+                        </div>
+                        <button class="run-button" type="button">Ejecutar</button>
+                    </div>
+                    <p class="exercise-description">Crear una página con varios botones. Cada vez que se pulse uno debe aparecer el mensaje “Has pulsado sobre un botón”, sin conocer de forma fija cuántos botones contiene la página ni asignar un onclick individual a cada uno.</p>
+                    <pre><code>Cargando código HTML...</code></pre>
+                </article>
+            </div>
+        </section>
+
+        <section id="section7" class="section-content" hidden>
+            <h2>Sección 7 - Anexo Eventos</h2>
+
+            <article class="panel html-panel">
+                <div class="panel-heading">
+                    <div>
+                        <span class="panel-label">Actividad 7</span>
+                        <h3>HTML utilizado para esta sección</h3>
+                    </div>
+                </div>
+                <p class="exercise-description">Esta sección utiliza archivos HTML independientes para cancelar envíos, evitar comportamientos predeterminados y detener la propagación de eventos.</p>
+            </article>
+
+            <div class="exercise-list">
+                <article class="panel exercise" data-source="./Actividad 7/Morcillo_Guillermo_A1.html" data-type="html">
+                    <div class="panel-heading">
+                        <div>
+                            <span class="exercise-number">Ejercicio 1</span>
+                            <h3>Cancelar el envío de un formulario</h3>
+                        </div>
+                        <button class="run-button" type="button">Ejecutar</button>
+                    </div>
+                    <p class="exercise-description">Crear un formulario con tres campos. Cancelar su envío mientras exista algún campo vacío y mostrar un mensaje cuando se cancela. Cuando todos los campos estén completos, mostrar también un mensaje indicando que el envío se produce.</p>
+                    <pre><code>Cargando código HTML...</code></pre>
+                </article>
+
+                <article class="panel exercise" data-source="./Actividad 7/Morcillo_Guillermo_A2.html" data-type="html">
+                    <div class="panel-heading">
+                        <div>
+                            <span class="exercise-number">Ejercicio 2</span>
+                            <h3>Cancelar el comportamiento normal de un enlace</h3>
+                        </div>
+                        <button class="run-button" type="button">Ejecutar</button>
+                    </div>
+                    <p class="exercise-description">Crear un documento con un enlace y evitar que se produzca su comportamiento normal al hacer clic. Debe utilizarse preventDefault para impedir la navegación indicada en el atributo href.</p>
+                    <pre><code>Cargando código HTML...</code></pre>
+                </article>
+
+                <article class="panel exercise" data-source="./Actividad 7/Morcillo_Guillermo_A3.html" data-type="html">
+                    <div class="panel-heading">
+                        <div>
+                            <span class="exercise-number">Ejercicio 3 extra</span>
+                            <h3>Detener la propagación con stopPropagation</h3>
+                        </div>
+                        <button class="run-button" type="button">Ejecutar</button>
+                    </div>
+                    <p class="exercise-description">Crear un ejemplo con varios elementos anidados. Al pulsar el botón interior, stopPropagation debe impedir que el mismo clic active también los eventos de los elementos padre.</p>
+                    <pre><code>Cargando código HTML...</code></pre>
+                </article>
+            </div>
+        </section>
+
+        <section id="section8" class="section-content" hidden>
+            <h2>Sección 8 - Formularios</h2>
+
+            <article class="panel html-panel">
+                <div class="panel-heading">
+                    <div>
+                        <span class="panel-label">Actividad 8</span>
+                        <h3>HTML utilizado para esta sección</h3>
+                    </div>
+                </div>
+                <p class="exercise-description">Esta sección utiliza archivos HTML independientes con formularios, cuadros de selección, botones radio y casillas de verificación.</p>
+            </article>
+
+            <div class="exercise-list">
+                <article class="panel exercise" data-source="./Actividad 8/Morcillo_Guillermo_A1.html" data-type="html">
+                    <div class="panel-heading">
+                        <div>
+                            <span class="exercise-number">Ejercicio 1</span>
+                            <h3>Formulario completo y validación</h3>
+                        </div>
+                        <button class="run-button" type="button">Ejecutar</button>
+                    </div>
+                    <p class="exercise-description">Construir un formulario con nombre, apellidos, teléfono, DNI, edad, sexo, foto, publicidad, aficiones y observaciones. Al cargarse debe establecer el foco en nombre.</p>
+                    <p class="exercise-description">Aficiones debe ser una lista con música, lectura y deporte. Al cambiarla debe mostrarse la longitud, el índice seleccionado y su valor. Las observaciones tendrán un máximo de 150 caracteres. Los botones deben guardar o resetear el formulario. El DNI será obligatorio y el teléfono deberá contener exactamente nueve dígitos.</p>
+                    <pre><code>Cargando código HTML...</code></pre>
+                </article>
+
+                <article class="panel exercise" data-source="./Actividad 8/Morcillo_Guillermo_A2.html" data-type="html">
+                    <div class="panel-heading">
+                        <div>
+                            <span class="exercise-number">Ejercicio 2</span>
+                            <h3>Cambiar color con un cuadro de lista</h3>
+                        </div>
+                        <button class="run-button" type="button">Ejecutar</button>
+                    </div>
+                    <p class="exercise-description">Crear un cuadro de lista con verde, azul y rojo y aplicar el color seleccionado al texto del párrafo “Este párrafo cambiará de color con la opción seleccionada del cuadro de lista”.</p>
+                    <pre><code>Cargando código HTML...</code></pre>
+                </article>
+
+                <article class="panel exercise" data-source="./Actividad 8/Morcillo_Guillermo_A3.html" data-type="html">
+                    <div class="panel-heading">
+                        <div>
+                            <span class="exercise-number">Ejercicio 3</span>
+                            <h3>Cambiar color con botones radio</h3>
+                        </div>
+                        <button class="run-button" type="button">Ejecutar</button>
+                    </div>
+                    <p class="exercise-description">Realizar el ejercicio anterior utilizando botones radio para los colores verde, azul y rojo en lugar de un cuadro de lista.</p>
+                    <pre><code>Cargando código HTML...</code></pre>
+                </article>
+
+                <article class="panel exercise" data-source="./Actividad 8/Morcillo_Guillermo_A4.html" data-type="html">
+                    <div class="panel-heading">
+                        <div>
+                            <span class="exercise-number">Ejercicio 4</span>
+                            <h3>Aplicar negrita y cursiva con checkbox</h3>
+                        </div>
+                        <button class="run-button" type="button">Ejecutar</button>
+                    </div>
+                    <p class="exercise-description">Crear dos checkbox, uno para negrita y otro para cursiva, junto a un párrafo. Al marcar cada checkbox debe aplicarse el estilo correspondiente al párrafo.</p>
+                    <pre><code>Cargando código HTML...</code></pre>
+                </article>
+            </div>
+        </section>
+
+        <section id="placeholderSection" class="section-content placeholder-section" hidden>
+            <h2 id="placeholderTitle"></h2>
+            <article class="panel">
+                <h3>Contenido pendiente</h3>
+                <p>Las actividades de esta sección se mostrarán aquí.</p>
+            </article>
+        </section>
+    </main>
+
+    <dialog id="runnerDialog">
+        <div class="dialog-heading">
+            <h3 id="runnerTitle">Ejercicio</h3>
+            <button id="closeRunner" type="button" aria-label="Cerrar">×</button>
+        </div>
+        <iframe id="runnerFrame" title="Resultado del ejercicio"></iframe>
+    </dialog>
+
+    <script src="./app.js"></script>
+</body>
+</html>
