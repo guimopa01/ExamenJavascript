@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+
+    let list;
+    let ul;
+    let lista;
+
+        document.addEventListener("DOMContentLoaded", function() {
+
+    list = document.getElementById("lista");
+    ul = list.getElementsByTagName("ul")[0];
+    lista = list.getElementsByTagName("li");
+
+    });
+
+function addParrafo(){
+
+    let texto = document.createTextNode('Perro');
+    let parrafo = document.createElement("li");
+
+    parrafo.appendChild(texto);
+    ul.appendChild(parrafo);
+}
+
+function insertarParrafo(){
+   
+    let texto = document.createTextNode('Perro insertado');
+    let parrafo = document.createElement("li");
+
+    parrafo.appendChild(texto);
+    ul.insertBefore(parrafo, lista[0]);
+}
+
+function reemplazarParrafo(){
+    let texto = document.createTextNode('Perro reemplazado');
+    let parrafo = document.createElement("li");
+    parrafo.appendChild(texto);
+    ul.replaceChild(parrafo, lista[0]);
+}
+
+function borrarParrafo(){
+    ul.removeChild(lista[0]);
+}
+
+function clonarDiv(){
+    let clonar = list.cloneNode(true);
+    document.body.appendChild(clonar);
+}
+
+function crearSublista(){
+    let sublista = document.createElement("ul");
+    let subitem1 = document.createElement("li");
+    let subitem2 = document.createElement("li");
+
+    subitem1.textContent = "Gato";
+    subitem2.textContent = "Gorila";
+    sublista.appendChild(subitem1);
+    sublista.appendChild(subitem2);
+    lista[0].appendChild(sublista);
+}
+
+function crearSublista2(){
+    let sublista = document.createElement("ul");
+    sublista.innerHTML = "<li>Tiburon</li><li>Delfin</li>";
+    lista[0].appendChild(sublista);
+}
+
+
+    </script>
+    <title>Document</title>
+</head>
+<body>
+        <h1> ANIMALES </h1>
+        <ul id="lista">
+            <li>Leon</li>
+            <li>Pantera</li>
+            <li>Jirafa</li>
+        </ul>
+
+    
+        <button onclick="addParrafo()">Añadir parrafo</button>
+        <button onclick="insertarParrafo()">Insertar parrafo</button>
+        <button onclick="reemplazarParrafo()">Reemplazar parrafo</button>
+        <button onclick="borrarParrafo()">Borrar parrafo</button>
+        <button onclick="clonarDiv()">Clonar div</button>
+        <button onclick="crearSublista()">Crear sublista en leon con DOM</button>
+        <button onclick="crearSublista2()">Crear sublista en leon con innerHTML</button>
+    </body>
+</html>

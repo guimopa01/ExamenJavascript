@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="texto"></p>
+    <button onclick="location.assign('https://www.google.com/')">Google</button>
+
+    <script>
+        document.getElementById("texto").innerText = "La URL de esta página es: " 
+        + location.href + "\n\nEl pathname es: " + location.pathname + "\n\nEl protocolo es: " + location.protocol;
+    </script>
+</body> 
+</html>

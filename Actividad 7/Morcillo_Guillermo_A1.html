@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+         document.addEventListener("DOMContentLoaded", function() {
+            let formulario = document.querySelector('form');
+            formulario.onsubmit = validarFormulario;
+        });
+
+        function validarFormulario() {
+            let texto = document.getElementById('message');
+            let val = document.querySelectorAll('input');
+
+            for (let e of val) {
+                if (e.value.trim() === "") {
+                    texto.textContent = "No se envia";
+                    return false;
+                }
+            }
+
+            alert("Se envio el mensaje");
+        }
+
+
+</script>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="" method="get">
+
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" name="dni"><br>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName"><br>
+
+        
+        <button id="boton" type="submit">Enviar</button>
+
+    </form>
+    <p id="message"></p>
+</body>
+</html>

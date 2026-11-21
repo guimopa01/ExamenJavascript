@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+
+    let enlaces;
+    let parrafos;
+    let divMostrar;
+        document.addEventListener("DOMContentLoaded", function() {
+
+    
+    parrafos = document.getElementsByTagName("p");
+    enlaces = document.getElementsByTagName("a");
+    divMostrar = document.getElementById("mostrar");
+
+    });
+
+    function contarEnlaces(){
+        alert("Número de enlaces: " + enlaces.length);
+    }
+
+    function referencias(){
+        let referencias = "Referencias:";
+
+        for (let ref of enlaces) {
+            referencias += "\n\n" + ref;
+        }
+        alert(referencias); 
+    }
+
+    function refParrafos(){
+        let referencias2 = "Referencias por parrafo:\n";
+        let contador = 1;
+
+        for (let p of parrafos) {
+            referencias2 += "\nParrafo " + contador + ":";
+            let enlacesParrafo = p.getElementsByTagName("a");
+            for (let e of enlacesParrafo) {
+                referencias2 += "\n" + e.href;
+            }
+            referencias2 += "\n";
+            contador++;
+        }
+        alert(referencias2);
+        //divMostrar.innerHTML = referencias2; cambiar \n por <br> para que se muestre bien en el div
+    }
+
+    
+
+    </script>
+    <title>Document</title>
+</head>
+<body>
+        <p> 1 enlace:<a href="https://www.google.com" target="_blank">Google</a></p>
+
+        <p> 2 enlaces:<a href="https://www.facebook.com" target="_blank">Facebook</a> y 
+            <a href="https://www.twitter.com" target="_blank">Twitter</a></p>
+
+        <p> 3 enlaces:<a href="https://www.instagram.com" target="_blank">Instagram</a>, 
+            <a href="https://www.tiktok.com" target="_blank">TikTok</a> y 
+            <a href="https://www.youtube.com" target="_blank">YouTube</a></p>
+
+        <div id="mostrar"></div>
+
+        <button onclick="contarEnlaces()">Contar enlaces</button>
+        <button onclick="referencias()">Mostrar referencias</button>
+        <button onclick="refParrafos()">Referencias por párrafo</button>
+
+</body>
+</html>

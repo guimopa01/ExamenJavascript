@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+
+        document.addEventListener("DOMContentLoaded", function() {
+            var botonesDiv = document.getElementById("botones");
+            var botones = botonesDiv.getElementsByTagName("button");
+
+
+            for (let b of botones) {
+                b.addEventListener("click", function() {
+                    let texto = document.createElement("p");
+                    texto.textContent = "Has pulsado sobre un botón";
+                    botonesDiv.appendChild(texto);
+                });
+            }
+            
+            /*
+
+            for (let boton of botones) {
+                boton.addEventListener("click", function() {
+                    let texto = document.createElement("p");
+                    texto.textContent = "Has pulsado sobre un botón";
+                    document.body.appendChild(texto);
+                });
+            }
+
+        --------------------------------------------------------------------
+
+            botonesDiv.addEventListener("click", function(event) {   
+            if (event.target.tagName === "BUTTON") {
+                    let texto = document.createElement("p");
+                    texto.textContent = "Has pulsado sobre un botón";
+                    botonesDiv.appendChild(texto);
+                }
+            });
+            
+            */
+        });
+
+            
+
+        </script>
+
+</head>
+<body>
+    <div id="botones">
+        <button>Haz click aquí</button>
+        <button>Haz click aquí</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function cambiarTexto(element, event) {
+            if (event.type === "mouseover") {
+                element.style.fontSize = "16pt";
+            } else if (event.type === "mouseout") {
+                element.style.fontSize = "12pt";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="cambiarTexto" style="font-size: 12pt;"
+    onmouseover="cambiarTexto(this, event)"
+    onmouseout="cambiarTexto(this, event)">
+        Texto de ejemplo. Pasa el ratón por encima para cambiar el tamaño de la fuente.
+    </div>
+</body>
+</html>

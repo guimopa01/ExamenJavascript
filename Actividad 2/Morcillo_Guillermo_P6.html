@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora Actual</title>
+</head>
+<body>
+    
+    <button onclick="darHora()">Hora Actual</button>
+
+    <p id="texto"></p>
+    
+    <script>
+    
+    function darHora() {
+    
+            const fecha = new Date();
+            const minutos = String(fecha.getMinutes()).padStart(2, '0');
+            const horas = String(fecha.getHours()).padStart(2, '0');
+    
+            if (fecha.getHours() >= 6 && fecha.getHours() < 14) {
+                document.getElementById("texto").innerHTML = "Buenos días, son las " + horas + ":" + minutos + " horas";
+            } else if (fecha.getHours() >= 14 && fecha.getHours() < 20) {
+                document.getElementById("texto").innerHTML = "Buenas tardes, son las " + horas + ":" + minutos + " horas";
+            } else {
+                document.getElementById("texto").innerHTML = "Buenas noches, son las " + horas + ":" + minutos + " horas";
+            }
+    
+        }
+    </script>
+</body>
+</html>

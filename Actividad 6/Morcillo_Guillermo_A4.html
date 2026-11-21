@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var cambiarEstiloDiv = document.getElementById("cambiarEstilo");
+        
+        cambiarEstiloDiv.addEventListener("mouseover", function() {
+            this.style.fontSize = "16pt";
+        });
+        cambiarEstiloDiv.addEventListener("mouseout", function() {
+            this.style.fontSize = "12pt";
+        });
+        
+        });
+        
+
+        
+    </script>
+</head>
+<body>
+    <div id="cambiarEstilo" style="font-size: 12pt;">
+           Texto de ejemplo. Pasa el ratón por encima para cambiar el tamaño de la fuente.
+    </div>
+</body>
+</html>

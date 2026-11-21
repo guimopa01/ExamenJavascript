@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function() {
+           
+            document.getElementById("cambiarTexto").onmouseover = agrandar;
+            document.getElementById("cambiarTexto").onmouseout = reducir; 
+            
+        });
+
+        function agrandar() {
+            this.style.fontSize = "16pt";
+        }
+
+        function reducir() {
+            this.style.fontSize = "12pt";
+        }
+      
+
+    </script>
+</head>
+<body>
+
+    <div id="cambiarTexto" style="font-size: 12pt;">
+        Texto de ejemplo. Pasa el ratón por encima para cambiar el tamaño de la fuente.
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+
+    let imagenes;
+    let enlaces;
+
+        document.addEventListener("DOMContentLoaded", function() {
+
+    imagenes = document.getElementsByTagName("img");
+    enlaces = document.getElementsByTagName("a");
+    
+    });
+
+    function contarImagenes(){
+        alert("Número de imágenes: " + imagenes.length);
+    }
+
+    function contarEnlaces(){
+        alert("Número de enlaces: " + enlaces.length);
+    }
+
+
+    </script>
+    <title>Document</title>
+</head>
+<body>
+        <img src="imagen1.png" alt="imagen 1"> <br>
+        <img src="imagen2.png" alt="imagen 2"> <br>
+        <img src="imagen3.png" alt="imagen 3"> <br>
+        <img src="imagen4.png" alt="imagen 4"> <br>
+
+        <a href="https://www.google.com" target="_blank">Google</a> <br>
+        <a href="https://www.facebook.com" target="_blank">Facebook</a> <br>
+    
+        <button onclick="contarImagenes()">Contar imágenes</button>
+        <button onclick="contarEnlaces()">Contar enlaces</button>
+
+</body>
+</html>

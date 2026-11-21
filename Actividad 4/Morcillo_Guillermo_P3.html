@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+
+    let colorDiv;
+
+        document.addEventListener("DOMContentLoaded", function() {
+
+    colorDiv = document.getElementById("color");
+
+
+    });
+
+    function cambiarAzul(){
+        colorDiv.style.backgroundColor = "blue";   
+    }
+
+    function cambiarVerde(){
+        colorDiv.style.backgroundColor = "green";   
+    }
+
+    function restablecerColor(){
+        colorDiv.style.backgroundColor = "";   
+    }
+
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="color">
+        <h3> Bienvenido a esta página de prueba de colores</h3>
+    </div>
+
+    <button onclick="cambiarAzul()" >Cambiar a azul</button>
+    <button onclick="cambiarVerde()" >Cambiar a verde</button>
+    <button onclick="restablecerColor()" >Restablecer color inicial</button>
+
+</body>
+</html>

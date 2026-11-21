@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+      function cambiarEstilo(element, tamaño) {
+        element.style.fontSize = tamaño;
+      }
+    </script>
+</head>
+<body>
+    <div style="font-size: 12pt;"
+    onmouseover="cambiarEstilo(this, '16pt')" onmouseout="cambiarEstilo(this, '12pt')">
+           Texto de ejemplo. Pasa el ratón por encima para cambiar el tamaño de la fuente.
+    </div>
+</body>
+</html>

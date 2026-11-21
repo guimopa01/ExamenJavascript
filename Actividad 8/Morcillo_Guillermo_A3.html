@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar color del texto</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let colores = document.getElementsByName("colores");
+            let parrafo = document.getElementById("parrafo");
+
+            for (let radio of colores) {
+                radio.addEventListener("change", function () {
+                    if (radio.checked) {
+                        parrafo.style.color = radio.value;
+                    }
+                });
+            }
+
+            for (let radio of colores) {
+                if (radio.checked) {
+                    parrafo.style.color = radio.value;
+                }
+            }
+        });
+    </script>
+</head>
+<body>
+    <p>Elige un color:</p>
+    <input type="radio" id="azul" name="colores" value="blue" checked>
+    <label for="azul">Azul</label><br>
+    <input type="radio" id="verde" name="colores" value="green">
+    <label for="verde">Verde</label><br>
+    <input type="radio" id="rojo" name="colores" value="red">
+    <label for="rojo">Rojo</label><br>
+
+    <p id="parrafo">Este párrafo cambiará de color con la opción seleccionada del grupo de botones</p>
+</body>
+</html>

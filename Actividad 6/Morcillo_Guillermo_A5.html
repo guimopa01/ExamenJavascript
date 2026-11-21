@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario numérico</title>
+    <script type="text/javascript">
+
+        document.addEventListener("DOMContentLoaded", function() {
+            var text = document.getElementById("texto");
+        
+            /*
+            text.addEventListener("keypress", function(event) {
+                let tecla = event.key;
+
+                if (tecla < "0" || tecla > "9") {
+                    event.preventDefault();
+                }
+            });
+            */
+        
+            text.addEventListener("keypress", function(event) {
+                let code = event.charCode || event.keyCode;
+                if (event.charCode !== 0 && (code < 48 || code > 57)) {
+                    event.preventDefault();
+                }
+            });
+        });
+    
+    </script>
+</head>
+<body>
+    <form action="#send" method="post">
+        <input type="text" id="texto" name="texto">
+    </form>
+</body>
+</html>

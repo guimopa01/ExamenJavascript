@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+        document.addEventListener("DOMContentLoaded", function() {
+
+          document.getElementById("primero").addEventListener("click", function(){
+            alert("Click en el div");
+          })
+
+          document.getElementById("segundo").addEventListener("click", function(){
+            alert("Click en el texto");
+          })
+
+          document.getElementById("tercero").addEventListener("click", function(event){
+            event.stopPropagation();
+            alert("Click en el boton");
+
+          })
+        });
+
+</script>
+</head>
+<body>
+    <div id="primero">
+        Div
+        <p id="segundo"> texto <br><br>
+            <button id="tercero">Boton</button>
+        </p>
+    </div>
+</body>
+</html>
